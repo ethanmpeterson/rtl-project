@@ -6,7 +6,8 @@ from pathlib import Path
 
 import vunit_util
 
-# NOTE: this needs to be run from the RTL directory
+# NOTE: you can add the example module in the rtl/src folder here to
+# compile that module and include it in a test. This simple example only pulls in the tb source code.
 WORKSPACE = Path(__file__).parent / "workspace"
 RTL_ROOT = Path(__file__).parent / ".." / "rtl" / "testbenches"
 
