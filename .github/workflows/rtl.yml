@@ -7,7 +7,8 @@ name: RTL
 jobs:
   lint:
     runs-on: ubuntu-latest
-
+    # can add this recursive glob for subdirectories within src
+    # rtl/src/**/*.sv
     steps:
       - uses: actions/checkout@v2
 
@@ -15,7 +16,6 @@ jobs:
         with:
           files: |
             rtl/src/*.sv
-            rtl/src/**/*.sv
         env:
           SVLINT_CONFIG: rtl/.svlint.toml
 
