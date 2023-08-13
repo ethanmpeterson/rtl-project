@@ -14,6 +14,7 @@ jobs:
       - uses: teachee-capstone/svlint-action@v1.03
         with:
           files: |
+            rtl/src/*.sv
             rtl/src/**/*.sv
         env:
           SVLINT_CONFIG: rtl/.svlint.toml
